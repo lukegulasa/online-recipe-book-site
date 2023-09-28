@@ -21,6 +21,12 @@ h1 {
     padding: 0 .5em;
 }
 
+.main__home-content,
+.main__favorite-recipes,
+.main__all-recipes {
+    padding: 2em .5em 5em;
+}
+
 /* Header Styles */
 .header {
     background-color: #a47f48;
@@ -111,4 +117,50 @@ h1 {
     color: #fff;
     text-align: center;
     font-size: 3.5em;
+}
+
+/* Recipes Page */
+.main__favorite-recipes__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.main__favorite-recipes__grid a {
+    color:#262125;
+    text-decoration: none;
+}
+
+.main__favorite-recipes__grid a:hover {
+    text-decoration: underline;
+}
+
+.main__favorite-recipes__grid__recipe {
+    text-align: center;
+}
+
+.main__favorite-recipes__grid__recipe > img {
+    display:block;
+    width: 100%;
+}
+
+.main__all-recipes {
+    background-color: #D1CFE2;
+}
+
+.main__all-recipes h2 {
+    color: #262125;
+}
+
+.main__all-recipes__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.main__all-recipes__grid__recipe img {
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
