@@ -158,9 +158,39 @@ h1 {
     gap: 5px;
 }
 
+.main__all-recipes__grid__recipe {
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+}
+
 .main__all-recipes__grid__recipe img {
     display: block;
     width: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
+}
+
+.main__all-recipes__grid__recipe:hover .recipes-img {
+    opacity: 0.5;
+}
+
+.recipe-link-wrap {
+    display: block;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.recipe-link-wrap a {
+    color:#262125;
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color:#a47f48;
+}
+
+.main__all-recipes__grid__recipe:hover .recipe-link-wrap {
+    opacity: 1;
 }
