@@ -28,7 +28,8 @@ h1 {
 .main__home-content,
 .main__favorite-recipes,
 .main__all-recipes,
-.main__about {
+.main__about,
+.main__contact {
     padding: 2em .5em 5em;
 }
 
@@ -211,4 +212,64 @@ h1 {
 .main__about__chef-img {
     display: block;
     width: 100%;
+}
+
+/* Contact Page */
+
+.main__contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.main__contact__info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main__contact__form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.main__contact__form__input {
+    width: 90%;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.main__contact__form__input label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    padding: 3px 5px;
+    width: 100%;
+}
+
+.main__contact__form__subscribe-sec {
+    display: grid;
+    grid-template-columns: 15px 1fr;
+    gap: 10px;
+}
+
+.contact-button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.7em 1.25em;
+    cursor: pointer;
+    background-color:#a47f48;
+    color: #fff;
+    transition: 0.25s ease;
+    border: none;
+}
+
+.contact-button:hover, .contact-button:focus {
+    background-color:#92DCE5;
+    color:#262125;
 }
