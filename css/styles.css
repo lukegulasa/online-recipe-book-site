@@ -1,4 +1,8 @@
 /* General Styles */
+*, html {
+    box-sizing:border-box;
+}
+
 html, body {
     background-color: #eeede8;
     color: #656c74;
@@ -23,7 +27,8 @@ h1 {
 
 .main__home-content,
 .main__favorite-recipes,
-.main__all-recipes {
+.main__all-recipes,
+.main__about {
     padding: 2em .5em 5em;
 }
 
@@ -193,4 +198,17 @@ h1 {
 
 .main__all-recipes__grid__recipe:hover .recipe-link-wrap {
     opacity: 1;
+}
+
+/* About Page */
+.main__about__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    width: 100%;
+}
+
+.main__about__chef-img {
+    display: block;
+    width: 100%;
 }
